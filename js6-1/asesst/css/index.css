@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Tahoma (sans-serif);
+  font-size: 25px;
+  user-select: none;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.box {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(199, 203, 232),
+    rgb(137, 141, 251)
+  );
+
+  width: 350px;
+  height: 650px;
+  margin: 150px auto;
+  border-radius: 30px;
+}
+
+.inputDiv {
+  width: 100%;
+  height: 210px;
+  /* background-color: red; */
+  display: block;
+  padding-top: 45px;
+}
+
+.inputDiv .inputDiv1 {
+  width: 100%;
+  height: 60px;
+  /* background-color: aqua; */
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 10px;
+  margin-bottom: 25px;
+}
+
+.inputDiv .inputDiv2 {
+  width: 100%;
+  height: 60px;
+  /* background-color: aqua; */
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 25px;
+  padding: 10px 10px;
+}
+
+.nums {
+  /* background-color: skyblue; */
+  margin-top: 10px;
+  width: 100%;
+  height: 75%;
+  padding: 20px 0;
+}
+
+.nums .fristrow {
+  display: grid;
+  /* background-color: rebeccapurple; */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: auto;
+  height: 70px;
+  padding-left: 10px;
+}
+
+.nums .fristrow button {
+  background-color: rgba(150, 162, 237, 0.534);
+  border-radius: 25%;
+  width: 80%;
+  cursor: pointer;
+  text-align: center;
+  margin: 5px 5px;
+}
+
+.nums .fristrow .Taghsim {
+  background-color: rgba(87, 93, 255, 0.349);
+  color: white;
+}
+
+.nums .fristrow .Zarb {
+  background-color: rgba(87, 93, 255, 0.349);
+  color: white;
+}
+
+.nums .buttons {
+  display: grid;
+  /* background-color: aquamarine; */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: auto;
+  height: 200px;
+  padding-left: 10px;
+}
+
+.nums .buttons button {
+  background-color: rgba(150, 162, 237, 0.534);
+  border-radius: 25%;
+  width: 80%;
+  cursor: pointer;
+  text-align: center;
+  margin: 5px 5px;
+}
+
+.nums .buttons .Minus {
+  background-color: rgba(87, 93, 255, 0.349);
+  color: white;
+}
+
+.nums .buttons .Total {
+  background-color: rgba(87, 93, 255, 0.349);
+  color: white;
+}
+
+.nums .buttons .Dot {
+  background-color: rgba(87, 93, 255, 0.349);
+  color: white;
+}
+
+.nums .lastrow {
+  display: grid;
+  /* background-color: rebeccapurple; */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: auto;
+  height: 70px;
+  padding-left: 10px;
+}
+
+.nums .lastrow button {
+  background-color: rgba(150, 162, 237, 0.534);
+  border-radius: 25%;
+  width: 80%;
+  cursor: pointer;
+  text-align: center;
+  margin: 5px 5px;
+}
+
+.nums .lastrow .Eqoal {
+  grid-column: 3 / 5;
+  background-color: rgba(87, 93, 255, 0.349);
+  color: white;
+}
+
+.nums .lastrow .ImgWeather {
+  object-fit: cover;
+}
+
+#imgWeather {
+  background-color: darkgrey;
+}
+
+/*************************************************************************/
+
+.darkmod {
+  color: white;
+  transition: all 800ms linear;
+}
+
+.darkmod #imgWeather {
+  background-color: rgba(255, 255, 0, 0.756);
+}
+
+.darkmod .box {
+  transition: all 500ms cubic-bezier(0, 0, 0.26, 0.6);
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(75, 76, 83),
+    rgb(38, 39, 44)
+  );
+}
+
+.darkmod .fristrow button {
+  background-color: lightslategray;
+  transition: all 500ms cubic-bezier(0, 0, 0.26, 0.6);
+}
+
+.darkmod .buttons button {
+  background-color: gray;
+  color: rgb(0, 76, 255);
+  transition: all 500ms cubic-bezier(0, 0, 0.26, 0.6);
+}
+
+.darkmod .lastrow button {
+  background-color: gray;
+  color: rgb(0, 76, 255);
+  transition: all 500ms linear;
+}
+
+.darkmod .fristrow .Taghsim {
+  background-color: rgb(56, 115, 210);
+  color: blue;
+  transition: all 500ms linear;
+}
+
+.darkmod .fristrow .Zarb {
+  background-color: rgb(56, 115, 210);
+  color: blue;
+  transition: all 500ms linear;
+}
+
+.darkmod .buttons .Minus {
+  background-color: rgb(56, 115, 210);
+  color: blue;
+  transition: all 500ms linear;
+}
+
+.darkmod .buttons .Total {
+  background-color: rgb(56, 115, 210);
+  color: blue;
+  transition: all 500ms linear;
+}
+
+.darkmod .buttons .Dot {
+  background-color: rgb(56, 115, 210);
+  color: blue;
+  transition: all 500ms linear;
+}
+
+.darkmod .lastrow .Eqoal {
+  grid-column: 3 / 5;
+  background-color: rgb(56, 115, 210);
+  color: white;
+  transition: all 500ms linear;
+}
